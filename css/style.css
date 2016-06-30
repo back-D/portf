@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: black;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.imgsection {
+    background: #575757 url('../img/kiev-02.jpg') center 10% no-repeat;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.wrapper.imgsection .description {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.title {
+    color: #374048;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-top: 20px;
+}
+
+.description {
+    position: relative;
+    color: #8a9095;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 20px;
+    padding: 0 130px 60px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.darksection {
+    background-color: #f8fbfd;
+    padding-bottom: 40px;
+}
+
+.portfolio-block {
+    margin: 0 auto;
+    max-width: 512px;
+}
+
+.portfolio-block img {
+    display: block;
+    float: left;
+    width: 49%;
+    border: 1px solid #8a9095;
+    margin: 0 2px;
+    max-height: 188px;
+}
+
+footer {
+    color: #fff;
+    font-size: 8px;
+    line-height: 1;
+    padding: 20px 0;
+    text-align: center;
+}
