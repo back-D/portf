@@ -26,13 +26,15 @@ body {
 
 .container {
     display: block;
-    width: 1024px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .wrapper {
     padding-top: 20px;
     text-align: center;
+    padding-bottom: 40px;
+    background-color: #fff;
 }
 
 .imgsection {
@@ -42,8 +44,10 @@ body {
 }
 
 .wrapper.imgsection .description {
-    color: yellow;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 .title {
@@ -64,23 +68,114 @@ body {
     line-height: 32px;
 }
 
+.btn {
+    display: inline-block;
+    background: orange;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 0 6px;
+}
+
+.btn:hover {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #374048;
+    font-weight: 500;
+}
+
 .darksection {
     background-color: #f8fbfd;
-    padding-bottom: 40px;
+
 }
 
 .portfolio-block {
     margin: 0 auto;
-    max-width: 512px;
 }
 
-.portfolio-block img {
+.portfolio-item {
     display: block;
     float: left;
-    width: 49%;
+    width: 33.3333%;
+}
+
+.portfolio-item span {
+    color: #8a9095;
+}
+
+.row:last-child .portfolio-item {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-block .portfolio-item img {
+    width: 80%;
     border: 1px solid #8a9095;
-    margin: 0 2px;
-    max-height: 188px;
+}
+
+.circle {
+    width: 100px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+    font-family: sans-serif;
+    color: #8a9095;
+}
+
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0 0 60px;
+    padding: 0;
+    color: #8a9095;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-list li {
+    display: inline-block;
+    float: left;
+    width: 33.33333%;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: inherit;
+    transition: .5s ease;
+}
+
+.contact-list li a:hover {
+    color: #374048;
+    text-decoration: underline;
+    transition: .5s ease;
+}
+
+.contact-list li i {
+    margin-right: 12px;
+    margin-left: -12px;
+    color: red;
+    font-size: 26px;
 }
 
 footer {
@@ -88,5 +183,23 @@ footer {
     font-size: 8px;
     line-height: 1;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .portfolio-block .portfolio-item, .contact-list li {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 780px) {
+    .portfolio-block .portfolio-item, .contact-list li {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+    }
 }

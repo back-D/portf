@@ -3,26 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Nikita Kuzmin</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
 <section class="wrapper imgsection">
     <div class="container">
         <h1 class="title">welcome to my website</h1>
-        <p class="description">My name is Nikita Kuzmin. I'm studying now to become a Front-End Developer.</p>
+        <p class="description">My name is Nikita Kuzmin and I'm a Front-End Developer.</p>
+        <div class="btn">
+            <a href="#contacts">My contacts</a>
+        </div>
     </div>
 </section>
 
 <section class="wrapper darksection">
     <div class="container">
         <h1 class="title">my works</h1>
-        <p class="description">Please notice that it is only a landings, that I make during my study.</p>
+        <p class="description">My latest works you can see below.</p>
         <div class="portfolio-block clearfix">
-            <a href="http://back-d.github.io/Lancelot/" target="_blank"><img src="img/1.jpg" alt="proland"></a>
-            <a href="http://back-d.github.io/wasp/" target="_blank"><img src="img/2.jpg" alt="rabia"></a>
+            <div class="portfolio-item">
+                <a href="http://back-d.github.io/Lancelot/" target="_blank"><img src="img/1.jpg" alt="proland"></a>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="http://back-d.github.io/wasp/" target="_blank"><img src="img/2.jpg" alt="rabia"></a>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="http://back-d.github.io/avail/" target="_blank"><img src="img/3.jpg" alt="avails"></a>
+            </div>
         </div>
+    </div>
+</section>
+
+<section class="wrapper">
+    <div class="container">
+        <h1 class="title">my skills</h1>
+        <div class="row clearfix">
+            <div class="portfolio-item">
+                <div class="first circle">
+                    <strong></strong>
+                    <span>HTML & HTML5</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="second circle">
+                    <strong></strong>
+                    <span>CSS & CSS3</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="third circle">
+                    <strong></strong>
+                    <span>SASS</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row clearfix">
+            <div class="portfolio-item">
+                <div class="fourth circle">
+                    <strong></strong>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="fifth circle">
+                    <strong></strong>
+                    <span>AngularJS</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="sixth circle">
+                    <strong></strong>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="portfolio-item">
+                <div class="seventh circle">
+                    <strong></strong>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="wrapper darksection" id="contacts">
+    <div class="container">
+        <h1 class="title">contacts</h1>
+        <ul class="contact-list clearfix">
+            <li>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/back-D/" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+38(066)2031093</span>
+            </li>
+            <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:backd80@gmail.com">backd80@gmail.com</a>
+            </li>
+        </ul>
     </div>
 </section>
 
