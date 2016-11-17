@@ -96,9 +96,34 @@ body {
 }
 
 .portfolio-item {
+    position: relative;
     display: block;
     float: left;
     width: 33.3333%;
+    height: 240px;
+    z-index: 0;
+}
+
+.portfolio-item .work-description {
+    text-decoration: none;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 25%;
+    opacity: 0;
+}
+
+.portfolio-item .work-description:hover {
+    opacity: 0.8;
 }
 
 .portfolio-item span {
