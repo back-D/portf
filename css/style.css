@@ -217,6 +217,7 @@ footer {
         float: none;
         margin: 0 auto;
         width: 60%;
+        height: auto;
     }
 }
 
